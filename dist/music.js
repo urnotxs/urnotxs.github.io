@@ -20,11 +20,6 @@ const ap = new APlayer({
         artist: '刘珂矣',
         url: 'http://up.mcyt.net/?down/46644.mp3',
         cover: 'http://oeff2vktt.bkt.clouddn.com/image/96.jpg',
-      },{
-        name: '一趟',
-        artist: '李宇春',
-        url: 'http://www.ytmp3.cn/down/49285.mp3',
-        cover: 'http://oeff2vktt.bkt.clouddn.com/image/96.jpg',
       }
     ]
 });
