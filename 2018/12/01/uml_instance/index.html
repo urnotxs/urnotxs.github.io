@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 2px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="活动图Hello World12345@startuml:Hello world;:This is on define onserver **lines**;@enduml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="plantuml 实例">
+<meta property="og:url" content="http://yoursite.com/2018/12/01/uml_instance/index.html">
+<meta property="og:site_name" content="urnot_xs">
+<meta property="og:description" content="活动图Hello World12345@startuml:Hello world;:This is on define onserver **lines**;@enduml">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-01-18T10:49:30.909Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="plantuml 实例">
+<meta name="twitter:description" content="活动图Hello World12345@startuml:Hello world;:This is on define onserver **lines**;@enduml">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/12/01/uml_instance/">
+
+
+
+
+
+  <title>plantuml 实例 | urnot_xs</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<!--新增代码 start -->
+
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+
+<!--新增代码 end -->
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">urnot_xs</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">个人博客，用于日常累积</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-pencil">
+          <a href="/pencil" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-pencil"></i> <br>
+            
+            随笔
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/01/uml_instance/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="霜">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/ChrisLee.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="urnot_xs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">plantuml 实例</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-01T00:00:00+08:00">
+                2018-12-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">笔记</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/笔记/plantuml/" itemprop="url" rel="index">
+                    <span itemprop="name">plantuml</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/01/uml_instance/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/01/uml_instance/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/12/01/uml_instance/" class="leancloud_visitors" data-flag-title="plantuml 实例">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="活动图Hello-World"><a href="#活动图Hello-World" class="headerlink" title="活动图Hello World"></a>活动图Hello World</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">:Hello world;</span><br><span class="line">:This is on define on</span><br><span class="line">server **lines**;</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="开始-结束"><a href="#开始-结束" class="headerlink" title="开始/结束"></a>开始/结束</h3><p>你可以使用关键字start和stop表示图示的开始和结束。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">:Hello world;</span><br><span class="line">:This is on define on</span><br><span class="line">server **lines**;</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<p>也可以使用 end 关键字。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">:Hello world;</span><br><span class="line">:This is on define on</span><br><span class="line">server **lines**;</span><br><span class="line">end</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><p>在图示中可以使用关键字if，then和else设置分支测试。标注文字则放在括号中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">if (Gviz install?) then (yes)</span><br><span class="line">:process all \ndiagrams;</span><br><span class="line">else (no)</span><br><span class="line">:process only</span><br><span class="line"> __sequence__ and __activity__ diagrams;</span><br><span class="line"> endif</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<p>在图示中可以使用关键字if，then和else设置分支测试。标注文字则放在括号中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">if(condition A) then(yes)</span><br><span class="line">  :Text1;</span><br><span class="line">elseif(condition B) then(yes)</span><br><span class="line">  :Text2;</span><br><span class="line">elseif(condition C) then(yes)</span><br><span class="line">  :Text3;</span><br><span class="line">elseif(condition D) then(yes)</span><br><span class="line">  :Text4;</span><br><span class="line">else(nothing)</span><br><span class="line">  :Text else;</span><br><span class="line">endif</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="重复循环"><a href="#重复循环" class="headerlink" title="重复循环"></a>重复循环</h3><p>你可以使用关键字repeat和repeat while进行重复循环<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">repeat</span><br><span class="line">  :read data?;</span><br><span class="line">  :generate diagrams;</span><br><span class="line"></span><br><span class="line">repeat while(more data?)</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="while-循环"><a href="#while-循环" class="headerlink" title="while 循环"></a>while 循环</h3><p>可以使用关键字while和end while进行while循环。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">while(data availiable?)</span><br><span class="line">  :read data;</span><br><span class="line">  :generate diagrams;</span><br><span class="line">endwhile</span><br><span class="line">detach</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<p>还可以在关键字endwhile后添加标注，还有一种方式是使用关键字is。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">while(check filesize) is (not empty?)</span><br><span class="line">  :readfile;</span><br><span class="line">endwhile (empty)</span><br><span class="line">  :close file;</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="并行处理"><a href="#并行处理" class="headerlink" title="并行处理"></a>并行处理</h3><p>你可以使用关键字fork，fork again和end fork表示并行处理。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">if(multiprocessor?) then (yes)</span><br><span class="line">  fork</span><br><span class="line">    :Treatment 1;</span><br><span class="line">  fork again</span><br><span class="line">    :Treatment 2;</span><br><span class="line">  fork again</span><br><span class="line">    :Treatment3;</span><br><span class="line">  end fork</span><br><span class="line">else (no)</span><br><span class="line">  :Treatment3;</span><br><span class="line">  :Treatment4;</span><br><span class="line">endif</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>文本格式支持creole wiki语法。<br>A note can be floating, using floating keyword.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">:foo1;</span><br><span class="line">floating note left:This is a note;</span><br><span class="line"></span><br><span class="line">:foo2;</span><br><span class="line">note right</span><br><span class="line">  This is on serval</span><br><span class="line">  //line //and can</span><br><span class="line">  contain &lt;b&gt;HTML&lt;/b&gt;</span><br><span class="line">  ====</span><br><span class="line">  * Calling the methon &quot;foo1()&quot; is prohibited</span><br><span class="line">end note</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h3><p>你可以为活动(activity)指定一种颜色。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">:start progress;</span><br><span class="line">#HotPink:reading configration files</span><br><span class="line">These files should edited at this point;</span><br><span class="line">#AAAAAA: ending of the process;</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="箭头"><a href="#箭头" class="headerlink" title="箭头"></a>箭头</h3><p>使用-&gt;标记，你可以给箭头添加文字或者修改箭头颜色。<br>同时，你也可以选择点状 (dotted)，条状(dashed)，加粗或者是隐式箭头<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">:foo1;</span><br><span class="line">-&gt; You can put text on arrows;</span><br><span class="line">if(test) then</span><br><span class="line">  -[#blue]-&gt;</span><br><span class="line">  :foo2;</span><br><span class="line">  -[#green,dashed]-&gt; The text can</span><br><span class="line">  also be several lines</span><br><span class="line">  and **very** long ...;</span><br><span class="line">  :foo3;</span><br><span class="line">else</span><br><span class="line">  -[#black,dotted]-&gt;</span><br><span class="line">  :foo4;</span><br><span class="line">endif</span><br><span class="line">-[#gray,bold]-&gt;</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="Connector"><a href="#Connector" class="headerlink" title="Connector"></a>Connector</h3><p>You can use parentheses to denote connector.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">:Some activity;</span><br><span class="line">(A)</span><br><span class="line">detach</span><br><span class="line">(A)</span><br><span class="line">:Other activity;</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="组合-grouping"><a href="#组合-grouping" class="headerlink" title="组合(grouping)"></a>组合(grouping)</h3><p>通过定义分区(partition)，你可以把多个活动组合(group)在一起。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">partition Init &#123;</span><br><span class="line">    :read config file;</span><br><span class="line">    :init internal variable;</span><br><span class="line">&#125;</span><br><span class="line">partition Running &#123;</span><br><span class="line">  :wait for user interaction;</span><br><span class="line">  :print information;</span><br><span class="line">&#125;</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+<h3 id="泳道-Swimlanes"><a href="#泳道-Swimlanes" class="headerlink" title="泳道(Swimlanes)"></a>泳道(Swimlanes)</h3><p>你可以使用管道符|来定义泳道。<br>还可以改变泳道的颜色。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">|Swimlane1|</span><br><span class="line">start</span><br><span class="line">:foo1;</span><br><span class="line">|#AntiqueWhite|Swimlane2|</span><br><span class="line">:foo2;</span><br><span class="line">:foo3;</span><br><span class="line">|Swimlane1|</span><br><span class="line">:foo4;</span><br><span class="line">|Swimlane2|</span><br><span class="line">:foo5;</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="分离-detach"><a href="#分离-detach" class="headerlink" title="分离(detach)"></a>分离(detach)</h3><p>可以使用关键字detach移除箭头。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">:start;</span><br><span class="line">fork</span><br><span class="line">  :foo1;</span><br><span class="line">  :foo2;</span><br><span class="line">fork again</span><br><span class="line">  :foo3;</span><br><span class="line">  detach</span><br><span class="line">endfork</span><br><span class="line">if(foo4) then</span><br><span class="line">  :foo5;</span><br><span class="line">  detach</span><br><span class="line">endif</span><br><span class="line">  :foo6;</span><br><span class="line">  detach</span><br><span class="line">  :foo7;</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure></p>
+<h3 id="特殊领域语言-SDL"><a href="#特殊领域语言-SDL" class="headerlink" title="特殊领域语言(SDL)"></a>特殊领域语言(SDL)</h3><p>通过修改活动标签最后的分号分隔符(;)，可以为活动设置不同的形状。</p>
+<ul>
+<li>|</li>
+<li>&lt;</li>
+<li>></li>
+<li>/</li>
+<li>]</li>
+<li>}<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">:Ready;</span><br><span class="line">:next(o)|</span><br><span class="line">:Receiving;</span><br><span class="line">split</span><br><span class="line"> :nak(i)&lt;</span><br><span class="line"> :ack(o)&gt;</span><br><span class="line">split again</span><br><span class="line"> :ack(i)&lt;</span><br><span class="line"> :next(o)</span><br><span class="line"> on several line|</span><br><span class="line"> :i := i + 1]</span><br><span class="line"> :ack(o)&gt;</span><br><span class="line">split again</span><br><span class="line"> :err(i)&lt;</span><br><span class="line"> :nak(o)&gt;</span><br><span class="line">split again</span><br><span class="line"> :foo/</span><br><span class="line">split again</span><br><span class="line"> :i &gt; 5&#125;</span><br><span class="line">stop</span><br><span class="line">end split</span><br><span class="line">:finish;</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><h4 id="按照分辨率划分"><a href="#按照分辨率划分" class="headerlink" title="按照分辨率划分"></a>按照分辨率划分</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">if(screen &lt; 720p) then(yes)</span><br><span class="line">  :低端;</span><br><span class="line">elseif(screen &gt;= 720p &amp;&amp; screen &lt;= 1080p) then(yes)</span><br><span class="line">  :中端;</span><br><span class="line">else (screen &gt; 1080p)</span><br><span class="line">  :高端;</span><br><span class="line">endif</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+<h4 id="按照内存划分"><a href="#按照内存划分" class="headerlink" title="按照内存划分"></a>按照内存划分</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">if(memory &lt; 4G) then(yes)</span><br><span class="line">  :低端;</span><br><span class="line">elseif(memory &gt;= 4G &amp;&amp; memory&lt;6G) then(yes)</span><br><span class="line">  :中端;</span><br><span class="line">else (memory &gt;= 6G)</span><br><span class="line">  :高端;</span><br><span class="line">endif</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+<h4 id="闪存划分"><a href="#闪存划分" class="headerlink" title="闪存划分"></a>闪存划分</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">if(rom &lt; 16G) then(yes)</span><br><span class="line">  :低端;</span><br><span class="line">elseif(rom &lt;= 32 &amp;&amp; rom &gt;=64) then(yes)</span><br><span class="line">  :中端;</span><br><span class="line">else (rom &gt;64)</span><br><span class="line">  :高端;</span><br><span class="line">endif</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+<p>`</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">if(eMMC == UFS2.0) then(yes)</span><br><span class="line">  :中端;</span><br><span class="line">else (eMMC == UFS2.1)</span><br><span class="line">  :高端;</span><br><span class="line">endif</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+<h3 id="一个完整的例子"><a href="#一个完整的例子" class="headerlink" title="一个完整的例子"></a>一个完整的例子</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">:Click servlet handle Request();</span><br><span class="line">:new page;</span><br><span class="line">if(Page.onSecurityCheck) then(true)</span><br><span class="line">  :Page.onInit();</span><br><span class="line">  if(isForward?) then(no)</span><br><span class="line">    :Process controls;</span><br><span class="line">    if(continue processing?) then (no)</span><br><span class="line">    stop</span><br><span class="line">    endif</span><br><span class="line"></span><br><span class="line">    if(isPost?) then(yes)</span><br><span class="line">      :Page.onPost();</span><br><span class="line">    else (no)</span><br><span class="line">      :Page.onGet();</span><br><span class="line">    endif</span><br><span class="line">    :Page.onRender();</span><br><span class="line">  endif</span><br><span class="line">else (false)</span><br><span class="line">endif</span><br><span class="line"></span><br><span class="line">&apos;下半部部分&apos;</span><br><span class="line">if(do redirect?) then (yes)</span><br><span class="line">  :redirect process;</span><br><span class="line">else</span><br><span class="line">  if(do forward?) then(yes)</span><br><span class="line">    :Forward request;</span><br><span class="line">  else (no)</span><br><span class="line">    :Render page template;</span><br><span class="line">  endif</span><br><span class="line">endif</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+<h3 id="登录流程图"><a href="#登录流程图" class="headerlink" title="登录流程图"></a>登录流程图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">:开始;</span><br><span class="line">repeat</span><br><span class="line">:输入账号和密码;</span><br><span class="line">:点击登录;</span><br><span class="line">repeat while(口令正确？) -&gt; no</span><br><span class="line">-&gt;yes;</span><br><span class="line">:登录成功;</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+<h3 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">start</span><br><span class="line">:请求;</span><br><span class="line">if(强制更新?) then (yes \n update_type==2)</span><br><span class="line">elseif(建议更新？) then (yes)</span><br><span class="line">	if(pop_version与本地不一样) then(yes)</span><br><span class="line">	else</span><br><span class="line">	-&gt; no;</span><br><span class="line">	stop</span><br><span class="line">	endif</span><br><span class="line">else (no)</span><br><span class="line">: 结束;</span><br><span class="line">detach</span><br><span class="line">endif</span><br><span class="line">:当前页面是首页;</span><br><span class="line">repeat</span><br><span class="line">:弹更新对话框;</span><br><span class="line">split</span><br><span class="line">:点击立即更新;</span><br><span class="line">	if(有链接?</span><br><span class="line">download_url_btn!=&quot;&quot;) then (yes)</span><br><span class="line">		:跳浏览页下载;</span><br><span class="line">	else (no)</span><br><span class="line">		:跳应用市场;</span><br><span class="line">	endif</span><br><span class="line">split again</span><br><span class="line">:点击跳过;</span><br><span class="line">:保存pop_version到本地;</span><br><span class="line">end split</span><br><span class="line">repeat while(点击跳过？) -&gt; no</span><br><span class="line">-&gt; yes;</span><br><span class="line">stop</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <div>
+     
+     <div>
+    
+      <div style="text-align:center;color: #ccc;font-size:14px;"> ------------- End  Thank For Your Reading -------------
+     </div>
+    
+</div>
+
+     
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/01/2019/plantuml/uml_instance/" rel="next" title="plantuml 实例">
+                <i class="fa fa-chevron-left"></i> plantuml 实例
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/08/2019/git/git/" rel="prev" title="Git&nbsp使用">
+                Git&nbsp使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://raw.githubusercontent.com/urnotxs/ImageLib/master/ChrisLee.jpg" alt="霜">
+            
+              <p class="site-author-name" itemprop="name">霜</p>
+              <p class="site-description motion-element" itemprop="description">人间一趟，看看太阳</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#活动图Hello-World"><span class="nav-number">1.</span> <span class="nav-text">活动图Hello World</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开始-结束"><span class="nav-number">2.</span> <span class="nav-text">开始/结束</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#条件语句"><span class="nav-number">3.</span> <span class="nav-text">条件语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重复循环"><span class="nav-number">4.</span> <span class="nav-text">重复循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#while-循环"><span class="nav-number">5.</span> <span class="nav-text">while 循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#并行处理"><span class="nav-number">6.</span> <span class="nav-text">并行处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">7.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#颜色"><span class="nav-number">8.</span> <span class="nav-text">颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#箭头"><span class="nav-number">9.</span> <span class="nav-text">箭头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Connector"><span class="nav-number">10.</span> <span class="nav-text">Connector</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组合-grouping"><span class="nav-number">11.</span> <span class="nav-text">组合(grouping)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#泳道-Swimlanes"><span class="nav-number">12.</span> <span class="nav-text">泳道(Swimlanes)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分离-detach"><span class="nav-number">13.</span> <span class="nav-text">分离(detach)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特殊领域语言-SDL"><span class="nav-number">14.</span> <span class="nav-text">特殊领域语言(SDL)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试"><span class="nav-number">15.</span> <span class="nav-text">测试</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#按照分辨率划分"><span class="nav-number">15.1.</span> <span class="nav-text">按照分辨率划分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#按照内存划分"><span class="nav-number">15.2.</span> <span class="nav-text">按照内存划分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#闪存划分"><span class="nav-number">15.3.</span> <span class="nav-text">闪存划分</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一个完整的例子"><span class="nav-number">16.</span> <span class="nav-text">一个完整的例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#登录流程图"><span class="nav-number">17.</span> <span class="nav-text">登录流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#升级"><span class="nav-number">18.</span> <span class="nav-text">升级</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">霜</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">5.3k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+  <script type="text/javascript" src="/dist/music.js"></script>
+  
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'awg24B8MDDN8kKBdo0saBusy-gzGzoHsz',
+        appKey: 'S1CQFYE8GdwTTbcKVa7MmSK7',
+        placeholder: '你的留言，是我的动力!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("awg24B8MDDN8kKBdo0saBusy-gzGzoHsz", "S1CQFYE8GdwTTbcKVa7MmSK7");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
