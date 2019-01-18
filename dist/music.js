@@ -4,6 +4,11 @@ const ap = new APlayer({
     autoplay: false,
     audio: [
       {
+        name: '木兰',
+        artist: '李宇春',
+        url: 'http://www.ytmp3.cn/down/55639.mp3',
+        cover: 'http://oeff2vktt.bkt.clouddn.com/image/96.jpg',
+      }，{
         name: "PDD洪荒之力",
         artist: '徐梦圆',
         url: 'http://up.mcyt.net/?down/39868.mp3',
