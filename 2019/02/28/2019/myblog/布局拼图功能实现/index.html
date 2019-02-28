@@ -95,16 +95,25 @@
 
 
 
-<meta name="description" content="人间一趟，看看太阳">
-<meta property="og:type" content="website">
+<meta name="description" content="#布局拼图功能实现 {ignore = true}    一、功能简述 二、布局模板 三、布局功能实现 构建矩形边框模型 构建图片缩放平移模型 布局绘制 事件触发 边框拖动规则 图片缩放平移规则 生成保存效果图     一、功能简述    1、根据用户选择图片张数和指定画布比例，根据布局模板初始洞口数据和图片指定绘制；2、可选中图片绘制边框，可切换图片，可置换洞口图片，可手动缩放图片；3、拖拉选中">
+<meta property="og:type" content="article">
 <meta property="og:title" content="urnot_xs">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/02/28/2019/myblog/布局拼图功能实现/index.html">
 <meta property="og:site_name" content="urnot_xs">
-<meta property="og:description" content="人间一趟，看看太阳">
+<meta property="og:description" content="#布局拼图功能实现 {ignore = true}    一、功能简述 二、布局模板 三、布局功能实现 构建矩形边框模型 构建图片缩放平移模型 布局绘制 事件触发 边框拖动规则 图片缩放平移规则 生成保存效果图     一、功能简述    1、根据用户选择图片张数和指定画布比例，根据布局模板初始洞口数据和图片指定绘制；2、可选中图片绘制边框，可切换图片，可置换洞口图片，可手动缩放图片；3、拖拉选中">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/layout_ui.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/layout_layout.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/layout_padding.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/BasePuzzle25076thumb.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/%E9%80%89%E4%B8%AD%E6%95%88%E6%9E%9C.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/%E5%9C%86%E8%A7%92%E5%B8%A6%E8%BE%B9%E6%A1%86%E6%95%88%E6%9E%9C.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/layout_save.jpg">
+<meta property="og:updated_time" content="2019-02-28T10:16:26.768Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="urnot_xs">
-<meta name="twitter:description" content="人间一趟，看看太阳">
+<meta name="twitter:description" content="#布局拼图功能实现 {ignore = true}    一、功能简述 二、布局模板 三、布局功能实现 构建矩形边框模型 构建图片缩放平移模型 布局绘制 事件触发 边框拖动规则 图片缩放平移规则 生成保存效果图     一、功能简述    1、根据用户选择图片张数和指定画布比例，根据布局模板初始洞口数据和图片指定绘制；2、可选中图片绘制边框，可切换图片，可置换洞口图片，可手动缩放图片；3、拖拉选中">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/layout_ui.png">
 
 
 
@@ -134,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/28/2019/myblog/布局拼图功能实现/">
 
 
 
 
 
-  <title>urnot_xs</title>
+  <title> | urnot_xs</title>
   
 
 
@@ -169,8 +178,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -273,9 +281,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -305,9 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/28/2019/myblog/布局拼图功能实现/" itemprop="url">未命名</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -409,9 +415,7 @@
       
 
       
-        
-          
-            <p>#布局拼图功能实现 {ignore = true}</p>
+        <p>#布局拼图功能实现 {ignore = true}</p>
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 <!-- code_chunk_output -->
 <ul>
@@ -903,8 +907,6 @@ if (line.getDirection() == LayoutLine.Direction.HORIZONTAL) {
 </ul>
 <h3 id="生成保存效果图"><a href="#生成保存效果图" class="headerlink" title="生成保存效果图"></a>生成保存效果图</h3><p>  <img src="https://raw.githubusercontent.com/urnotxs/ImageLib/master/layout_save.jpg" alt="avatar"></p>
 
-          
-        
       
     </div>
     
@@ -919,827 +921,42 @@ if (line.getDirection() == LayoutLine.Direction.HORIZONTAL) {
 
     <div>
      
+     <div>
+    
+      <div style="text-align:center;color: #ccc;font-size:14px;"> ------------- End  Thank For Your Reading -------------
+     </div>
+    
+</div>
+
+     
     </div>
 
     <footer class="post-footer">
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/13/2019/edittool/markdown语法/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="霜">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/ChrisLee.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="urnot_xs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/13/2019/edittool/markdown语法/" itemprop="url">Markdown &nbsp;语法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-13T15:22:00+08:00">
-                2019-01-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/markdown/" itemprop="url" rel="index">
-                    <span itemprop="name">markdown</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/01/13/2019/edittool/markdown语法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/13/2019/edittool/markdown语法/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2019/01/13/2019/edittool/markdown语法/" class="leancloud_visitors" data-flag-title="Markdown &nbsp;语法">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  277
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
       
 
       
-        
-          <p>笔记主要来源于<a href="https://segmentfault.com/markdown?tdsourcetag=s_pcqq_aiomsg" target="_blank" rel="noopener">点这里</a></p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>代码块，由下面一对包住：<br>三个`换行<code>--code--</code>换行三个`</p>
-<p>行内代码由`–code–`包住。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">'hello world'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/01/13/2019/edittool/markdown语法/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/13/2019/edittool/markdown语法/" rel="next" title="Markdown &nbsp;语法">
+                <i class="fa fa-chevron-left"></i> Markdown &nbsp;语法
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <div>
-     
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/12/2019/plantuml/统一建模语言uml/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="霜">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/ChrisLee.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="urnot_xs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/12/2019/plantuml/统一建模语言uml/" itemprop="url">统一建模语言UML</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-12T17:05:00+08:00">
-                2019-01-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/UML/" itemprop="url" rel="index">
-                    <span itemprop="name">UML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/01/12/2019/plantuml/统一建模语言uml/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/12/2019/plantuml/统一建模语言uml/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2019/01/12/2019/plantuml/统一建模语言uml/" class="leancloud_visitors" data-flag-title="统一建模语言UML">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  0
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <div>
-     
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/12/2019/plantuml/class-plantuml/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="霜">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/ChrisLee.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="urnot_xs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/12/2019/plantuml/class-plantuml/" itemprop="url">Plantuml 学习之类视图</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-12T15:22:00+08:00">
-                2019-01-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/UML/" itemprop="url" rel="index">
-                    <span itemprop="name">UML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/01/12/2019/plantuml/class-plantuml/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/12/2019/plantuml/class-plantuml/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2019/01/12/2019/plantuml/class-plantuml/" class="leancloud_visitors" data-flag-title="Plantuml 学习之类视图">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  758
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h3><p>&nbsp;&nbsp;&nbsp;&nbsp; 面向对象编程过程中如何把类与类之间的关系表述出来，最好的方法是使用统一建模语言中的类视图。<br>从现实世界到业务模型再到设计模型到实现，类视图是关键的一环。</p>
-<h3 id="类图的基本元素"><a href="#类图的基本元素" class="headerlink" title="类图的基本元素"></a>类图的基本元素</h3><p>类、接口、关系<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/01/12/2019/plantuml/class-plantuml/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
           </div>
-          <!--/noindex-->
-        
-      
-    </p></div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <div>
-     
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/08/2019/git/git/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="霜">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/ChrisLee.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="urnot_xs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/08/2019/git/git/" itemprop="url">Git&nbsp使用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-08T14:26:00+08:00">
-                2018-12-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index">
-                    <span itemprop="name">git</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/12/08/2019/git/git/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/08/2019/git/git/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/12/08/2019/git/git/" class="leancloud_visitors" data-flag-title="Git&nbsp使用">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  978
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4
-                </span>
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h3 id="笔记来源"><a href="#笔记来源" class="headerlink" title="笔记来源"></a>笔记来源</h3><p>该笔记来源于<a href="https://git-scm.com/book/zh/" target="_blank" rel="noopener">git使用网站</a>，如有侵权请联系：<a href="mailto:sykent.lao@gmail.com" target="_blank" rel="noopener">sykent.lao@gmail.com</a></p>
-<h2 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h2><h3 id="版本管理系统"><a href="#版本管理系统" class="headerlink" title="版本管理系统"></a>版本管理系统</h3><p><strong>git：</strong> 分布式版本管理系统<br><strong>svbversion(svn)：</strong> 集中式版本管理系统(VCS)</p>
-<h3 id="git-三种状态"><a href="#git-三种状态" class="headerlink" title="git 三种状态"></a>git 三种状态</h3><p><strong>文件状态</strong><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/12/08/2019/git/git/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </p></div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <div>
-     
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1749,212 +966,11 @@ if (line.getDirection() == LayoutLine.Direction.HORIZONTAL) {
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/01/2019/plantuml/uml_instance/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="霜">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/urnotxs/ImageLib/master/ChrisLee.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="urnot_xs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/01/2019/plantuml/uml_instance/" itemprop="url">plantuml 实例</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-01T00:00:00+08:00">
-                2018-12-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/UML/" itemprop="url" rel="index">
-                    <span itemprop="name">UML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/12/01/2019/plantuml/uml_instance/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/01/2019/plantuml/uml_instance/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/12/01/2019/plantuml/uml_instance/" class="leancloud_visitors" data-flag-title="plantuml 实例">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1.1k
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  5
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="活动图Hello-World"><a href="#活动图Hello-World" class="headerlink" title="活动图Hello World"></a>活动图Hello World</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@startuml</span><br><span class="line">:Hello world;</span><br><span class="line">:This is on define on</span><br><span class="line">server **lines**;</span><br><span class="line">@enduml</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/12/01/2019/plantuml/uml_instance/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <div>
-     
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -1962,6 +978,13 @@ if (line.getDirection() == LayoutLine.Direction.HORIZONTAL) {
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -1982,8 +1005,17 @@ if (line.getDirection() == LayoutLine.Direction.HORIZONTAL) {
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
 
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -2046,6 +1078,22 @@ if (line.getDirection() == LayoutLine.Direction.HORIZONTAL) {
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、功能简述"><span class="nav-number">1.</span> <span class="nav-text">一、功能简述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、布局模板"><span class="nav-number">2.</span> <span class="nav-text">二、布局模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、布局功能实现"><span class="nav-number">3.</span> <span class="nav-text">三、布局功能实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#构建矩形边框模型"><span class="nav-number">3.1.</span> <span class="nav-text">构建矩形边框模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#LayoutParameter统筹布局LayoutArea和LayoutLine，配合绘制和事件触发。"><span class="nav-number">3.1.1.</span> <span class="nav-text">LayoutParameter统筹布局LayoutArea和LayoutLine，配合绘制和事件触发。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#记录布局外边矩形，用于判断LayoutLine是否为外线，外线不可拖动；"><span class="nav-number">3.1.1.1.</span> <span class="nav-text">记录布局外边矩形，用于判断LayoutLine是否为外线，外线不可拖动；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#记录所有垂直方向和水平方向的LayoutLine集合，可用于筛选同一直线上的边框，做未选中状态的边框拖动；"><span class="nav-number">3.1.1.2.</span> <span class="nav-text">记录所有垂直方向和水平方向的LayoutLine集合，可用于筛选同一直线上的边框，做未选中状态的边框拖动；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#记录在同一水平和垂直方向上的LayoutLine集合，可用于筛选联动矩形框，做选中状态的边框拖动。"><span class="nav-number">3.1.1.3.</span> <span class="nav-text">记录在同一水平和垂直方向上的LayoutLine集合，可用于筛选联动矩形框，做选中状态的边框拖动。</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LayoutArea矩形框模型"><span class="nav-number">3.1.2.</span> <span class="nav-text">LayoutArea矩形框模型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#记录上下左右四条边线LayoutLine和边距Padding；"><span class="nav-number">3.1.2.1.</span> <span class="nav-text">记录上下左右四条边线LayoutLine和边距Padding；</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LayoutLine边框模型"><span class="nav-number">3.1.3.</span> <span class="nav-text">LayoutLine边框模型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#标记边框的方向，水平、垂直；"><span class="nav-number">3.1.3.1.</span> <span class="nav-text">标记边框的方向，水平、垂直；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#标记边框属于矩形框的那条边，上、下、左、右；"><span class="nav-number">3.1.3.2.</span> <span class="nav-text">标记边框属于矩形框的那条边，上、下、左、右；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#记录边框的首尾两个点，用于筛选联动边框；"><span class="nav-number">3.1.3.3.</span> <span class="nav-text">记录边框的首尾两个点，用于筛选联动边框；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#记录边框触发down、move时所在首尾点的坐标，根据坐标和边框移动的offset得出新的首尾点坐标。"><span class="nav-number">3.1.3.4.</span> <span class="nav-text">记录边框触发down、move时所在首尾点的坐标，根据坐标和边框移动的offset得出新的首尾点坐标。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构建图片缩放平移模型"><span class="nav-number">3.2.</span> <span class="nav-text">构建图片缩放平移模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BasePiece-图片模型基类，用于处理图片拖拉跩、置换等操作，布局模板切换和边框调整的绘制；"><span class="nav-number">3.2.1.</span> <span class="nav-text">BasePiece 图片模型基类，用于处理图片拖拉跩、置换等操作，布局模板切换和边框调整的绘制；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LayoutPiece-继承-BasePiece，操作LayoutArea；"><span class="nav-number">3.2.2.</span> <span class="nav-text">LayoutPiece 继承 BasePiece，操作LayoutArea；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LayoutJointPiece-继承-BasePiece，操作RectF。"><span class="nav-number">3.2.3.</span> <span class="nav-text">LayoutJointPiece 继承 BasePiece，操作RectF。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#布局绘制"><span class="nav-number">3.3.</span> <span class="nav-text">布局绘制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BasePiece-draw"><span class="nav-number">3.3.1.</span> <span class="nav-text">BasePiece.draw()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LayoutPiece-draw"><span class="nav-number">3.3.2.</span> <span class="nav-text">LayoutPiece.draw()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#绘制选中区域的边框"><span class="nav-number">3.3.3.</span> <span class="nav-text">绘制选中区域的边框</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成保存效果图"><span class="nav-number">3.4.</span> <span class="nav-text">生成保存效果图</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -2207,6 +1255,10 @@ if (line.getDirection() == LayoutLine.Direction.HORIZONTAL) {
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
